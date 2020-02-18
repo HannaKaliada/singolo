@@ -1,0 +1,224 @@
+@font-face {
+    font-family: 'Lato';
+    src: url('assets/fonts/Lato-Bold.woff2') format('woff2'),
+        url('assets/fonts/Lato-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Lato';
+    src: url('assets/fonts/Lato-Light.woff2') format('woff2'),
+        url('assets/fonts/Lato-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Lato';
+    src: url('assets/fonts/Lato-Regular.woff2') format('woff2'),
+        url('assets/fonts/Lato-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Lato';
+    src: url('assets/fonts/Lato-Black.woff2') format('woff2'),
+        url('assets/fonts/Lato-Black.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Lato Hairline';
+    src: url('assets/fonts/Lato-Hairline.woff2') format('woff2'),
+        url('assets/fonts/Lato-Hairline.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: "Lato", sans-serif;
+}
+.wrapper{
+    width: 1020px;
+    margin: 0 auto;
+}
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 40px;
+    background-color: #2d303a;
+    color: #ffffff;
+    height: 89px;
+}
+header nav ul{
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+}
+header nav ul li{
+    margin-right: 30px;
+    margin-top: 5px;
+}
+header nav ul li:last-child{
+    margin-right: 0;
+}
+header nav ul li a{
+    color: #ffffff;
+    font-weight: 700;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 12px;
+    letter-spacing: -0.2px;
+    vertical-align: middle;
+    line-height: 6.32px;
+    position: relative;
+}
+header nav ul li a:before{
+    position: absolute;
+    content: ".";
+    color: #494e62;
+    left: -18px;
+    top: 50%;
+    margin-top: -8px;
+    font-size: 18px;
+}
+header nav ul li:first-child a:before{
+    content: none;
+}
+header nav ul li a.active{
+    color: #f06c64;
+}
+header nav ul li a:hover{
+text-decoration: underline;
+}
+
+header .logo{
+    text-transform: uppercase;
+    margin-top:6px;
+}
+header .logo a{
+    font-size: 25px;
+    font-weight: 700;
+    letter-spacing: -0.6px;
+    line-height: 6.32px;
+    color: #ffffff;
+    text-decoration: none;
+}
+header .logo span{
+    color: #f06c64;
+}
+.header-bottom{
+    height: 6px;
+    background-color: #323746;
+}
+.slider{
+    position: relative;
+}
+.slider:before, .slider:after{
+    position: absolute;
+    top: 50%;
+    margin-top: -20px;
+    z-index: 999;
+    cursor: pointer;
+}
+.slider:before{
+    content: url("assets/icons/previous.png");
+    left: 41px;
+}
+.slider:after{
+    content: url("assets/icons/next.png");
+right: 41px;
+}
+.slider .slide-1{
+    position: relative;
+    background-color: #f06c64;
+    height: 595px;
+}
+.slide-1 img{
+    position: absolute;
+}
+.slide-1 .vertical-phone{
+    left: 112px;
+    top: 53px;
+}
+.slide-1 .horizontal-phone{
+    top: 174px;
+    left: 425px;
+}
+.slide-1-bottom{
+    height: 5px;
+    background-color: #ea676b;;
+}
+.services{
+    background-color: #f2f2f2;
+    padding: 69px 40px 32px;
+
+}
+.services h1{
+    font-size: 30px;
+    line-height: 18px;
+    letter-spacing: -0.2px;
+    color: #666d89;
+    font-weight: 900;
+    margin-bottom: 27px;
+}
+
+.services .section-desc{
+    font-size: 18px;
+    text-align: justify;
+    line-height: 30px;
+    font-weight: 300;
+    color: #767e9e;
+    margin-bottom: 45px;
+}
+
+.services .services-list ul{
+    display:flex;
+    flex-wrap:wrap;
+}
+
+.services .services-list ul li{
+    display: flex;
+    width: 31.915%;
+    list-style-type: none;
+    margin-bottom: 30px;
+    margin-right: 20px;
+}
+.services .services-list ul li:nth-child(3), .services .services-list ul li:last-child{
+    margin-right: 0;
+}
+
+.services .services-list ul li h3{
+    font-weight: 900;
+    letter-spacing: -0.1px;
+    font-size: 18px;
+    line-height: 18px;
+    color: #666d89;
+    margin-bottom: 10px;
+}
+
+.services .services-list ul li p{
+    font-size: 12px;
+    text-align: justify;
+    line-height: 22px;
+    color: #767e9e;
+    overflow: hidden;
+}
+
+.services .services-item-icon{
+margin-right: 21px;
+margin-top:2px;
+}
+.services-bottom{
+    height: 3px;
+    background-color: #ffffff;
+}
+
