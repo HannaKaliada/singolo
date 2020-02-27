@@ -300,6 +300,10 @@ header .logo span {
     margin-bottom: 17px;
 }
 
+.portfolio-works-list div:nth-child(n+13) {
+    display:none;
+}
+
 .portfolio-works-list div:nth-child(4n) {
     margin-right: 0;
 }
@@ -333,6 +337,9 @@ header .logo span {
 
 .about-us .workers-block .worker-name {
     font-size: 18px;
+    width:300px;
+    white-space: nowrap;
+    overflow: hidden;
     font-weight: 900;
     line-height: 17.86px;
     color: #666d89;
