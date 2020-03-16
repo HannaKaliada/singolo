@@ -445,6 +445,7 @@ header .logo span {
 .portfolio-works-list div {
     width: 23%;
     margin-bottom: 17px;
+    cursor: pointer;
 }
 
 .portfolio-works-list div:nth-child(n+13) {
