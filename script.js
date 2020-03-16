@@ -92,7 +92,8 @@
             const FORM = document.querySelector('#contact-form');
             const CLOSE_BTN = document.querySelector('#close-btn');
             const MODAL_BLOCK = document.querySelector('#form-message');
-            FORM.addEventListener('submit', () => {
+            FORM.addEventListener('submit', (event) => {
+                event.preventDefault();
                 let subject = document.querySelector('#contact-form').querySelector('#subject').value.toString();
                 let comment = document.querySelector('#contact-form').querySelector('#comment').value.toString();
                 if(subject && comment){
