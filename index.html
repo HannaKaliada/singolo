@@ -12,31 +12,39 @@
         <header>
             <div class="logo"><a href="#">Singolo<span>*</span></a></div>
             <nav>
-                <ul>
-                    <li><a class="active" href="#">home</a></li>
-                    <li><a href="#">services</a></li>
-                    <li><a href="#">portfolio</a></li>
-                    <li><a href="#">about</a></li>
-                    <li><a href="#">contact</a></li>
+                <ul id="nav">
+                    <li><a id='navItem' class="link active" href="#">home</a></li>
+                    <li><a id='navItem' class="link" href="#services">services</a></li>
+                    <li><a id='navItem' class="link" href="#portfolio">portfolio</a></li>
+                    <li><a id='navItem' class="link" href="#about-us">about</a></li>
+                    <li><a id='navItem' class="link" href="#get-a-quote">contact</a></li>
                 </ul>
             </nav>
         </header>
-        <div class="header-bottom"></div>
         <main>
             <section>
                 <div class="slider">
-                    <div class="slide-1">
-                        <img class="vertical-phone" src="assets/images/iPhone Vertical.png">
-                        <img class="horizontal-phone" src="assets/images/iPhone Horizontal.png">
+                    <div id="slides">
+                        <div id="slide" class="slide slide-1 active">
+                            <img class="vertical-phone" src="assets/images/iPhone Vertical.png">
+                            <img class="horizontal-phone" src="assets/images/iPhone Horizontal.png">
+                            <div id="slide-phone-1" class="slide-phone slide-phone-1"></div>
+                            <div id="slide-phone 2" class="slide-phone slide-phone-2"></div>
+                            <div id="slide-phone-screen-1" class="slide-phone-screen slide-phone-screen-1"></div>
+                            <div id="slide-phone-screen-2" class="slide-phone-screen slide-phone-screen-2"></div>
+                        </div>
+                        <div id="slide" class="slide slide-2">
+                            <img src="assets/images/slide2.png">
+                        </div>
                     </div>
-                    <span class='arrow arrow-prev'></span>
-                    <span class='arrow arrow-next'></span>
+                    <span id="arrow-left" class='arrow arrow-prev'></span>
+                    <span id="arrow-right" class='arrow arrow-next'></span>
                     <div class="slide-1-bottom">
                     </div>
                 </div>
             </section>
             <section>
-                <div class="services">
+                <div class="services" id="services">
                     <h1 class="section-title">Our Services</h1>
                     <div class="section-desc">Fusce dapibus, tellus ac cursus commodo, tortor
                         mauris condimentum. Duis mollis, non commodo luctus, nisi erat porttitor ligula,
@@ -114,31 +122,43 @@
                     <h2 class="section-title">Portfolio</h2>
                     <div class="section-desc">Duis mollis, est non commodo luctus,
                         nisi erat porttitor ligula, eget lacinia odio sem nec elit.</div>
-                    <div class="portfolio-filter">
-                        <div class="filter-btn">All</div>
-                        <div class="filter-btn">Web Design</div>
-                        <div class="filter-btn">Graphic Design</div>
-                        <div class="filter-btn">Artwork</div>
+                    <div id='portfolio-filters' class="portfolio-filter">
+                        <div id="filter" class="filter-btn active">All</div>
+                        <div id="filter" class="filter-btn">Web Design</div>
+                        <div id="filter" class="filter-btn">Graphic Design</div>
+                        <div id="filter" class="filter-btn">Artwork</div>
                     </div>
-                    <div class="portfolio-works-list">
-                        <div><img src="assets/images/portf1.png" alt=""></div>
-                        <div><img src="assets/images/portf2.png" alt=""></div>
-                        <div><img src="assets/images/portf3.png" alt=""></div>
-                        <div><img src="assets/images/portf4.png" alt=""></div>
-                        <div><img src="assets/images/portf5.png" alt=""></div>
-                        <div><img src="assets/images/portf6.png" alt=""></div>
-                        <div><img src="assets/images/portf7.png" alt=""></div>
-                        <div><img src="assets/images/portf8.png" alt=""></div>
-                        <div><img src="assets/images/portf9.png" alt=""></div>
-                        <div><img src="assets/images/portf10.png" alt=""></div>
-                        <div><img src="assets/images/portf11.png" alt=""></div>
-                        <div><img src="assets/images/portf12.png" alt=""></div>
+                    <div id="portfolio" class="portfolio-works-list">
+                        <div id="portfolio-work"><img class="portfolio-image" src="assets/images/portf1.png" alt="">
+                        </div>
+                        <div id="portfolio-work"><img class="portfolio-image" src="assets/images/portf2.png" alt="">
+                        </div>
+                        <div id="portfolio-work"><img class="portfolio-image" src="assets/images/portf3.png" alt="">
+                        </div>
+                        <div id="portfolio-work"><img class="portfolio-image" src="assets/images/portf4.png" alt="">
+                        </div>
+                        <div id="portfolio-work"><img class="portfolio-image" src="assets/images/portf5.png" alt="">
+                        </div>
+                        <div id="portfolio-work"><img class="portfolio-image" src="assets/images/portf6.png" alt="">
+                        </div>
+                        <div id="portfolio-work"><img class="portfolio-image" src="assets/images/portf7.png" alt="">
+                        </div>
+                        <div id="portfolio-work"><img class="portfolio-image" src="assets/images/portf8.png" alt="">
+                        </div>
+                        <div id="portfolio-work"><img class="portfolio-image" src="assets/images/portf9.png" alt="">
+                        </div>
+                        <div id="portfolio-work"><img class="portfolio-image" src="assets/images/portf10.png" alt="">
+                        </div>
+                        <div id="portfolio-work"><img class="portfolio-image" src="assets/images/portf11.png" alt="">
+                        </div>
+                        <div id="portfolio-work"><img class="portfolio-image" src="assets/images/portf12.png" alt="">
+                        </div>
                     </div>
                 </div>
                 <div class="portfolio-bottom"></div>
             </section>
             <section>
-                <div class="about-us">
+                <div class="about-us" id="about-us">
                     <h2 class="section-title">About Us</h2>
                     <div class="section-desc">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis
                         mollis, non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.
@@ -263,21 +283,29 @@
                 <div class="about-us-bottom"></div>
             </section>
             <section>
-                <div class="get-a-quote">
+                <div class="get-a-quote" id="get-a-quote">
                     <h2 class="section-title">Get a Quote</h2>
                     <div class="section-desc">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis
                         mollis, non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.
                         Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</div>
                     <div class="form-and-info">
                         <div class="form">
-                            <form>
-                                <input type="text" pattern="[a-zA-Z]+" min="2" placeholder="Name (Required)"
+                            <form id="contact-form" action="#get-a-quote">
+                                <input id="name" type="text" pattern="[a-zA-Z]+" min="2" placeholder="Name (Required)"
                                     required><br>
-                                <input type="email" placeholder="Email (Required)" required><br>
-                                <input type="text" placeholder="Subject"><br>
-                                <textarea placeholder="Describe your project in detail..."></textarea>
-                                <input class="submit-btn" type="submit" value="submit">
+                                <input id="email" type="email" placeholder="Email (Required)" required><br>
+                                <input id="subject" type="text" placeholder="Subject"><br>
+                                <textarea id="comment" placeholder="Describe your project in detail..."></textarea>
+                                <button id="submit-btn" class="btn">submit</button>
                             </form>
+                            <div id="form-message" class="hidden">
+                                <div id="message">
+                                    <h3>Email sent!</h3>
+                                    <p>Subject: <span id="topic">No subject</span></p>
+                                    <p>Description: <span id="description">No description</span></p>
+                                    <button id="close-btn" class="btn">OK</button>
+                                </div>
+                            </div>
                         </div>
                         <div class="contact-info">
                             <h3>Contact information</h3>
@@ -327,6 +355,7 @@
             </div>
         </footer>
     </div>
+    <script src='script.js'></script>
 </body>
 
 </html>
