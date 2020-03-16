@@ -78,6 +78,7 @@ header nav ul {
 header nav ul li {
     margin-right: 30px;
     margin-top: 5px;
+    position: relative;
 }
 
 header nav ul li:last-child {
@@ -85,7 +86,6 @@ header nav ul li:last-child {
 }
 
 header nav ul li a {
-    position: relative;
     color: #ffffff;
     font-weight: 700;
     text-decoration: none;
@@ -96,17 +96,17 @@ header nav ul li a {
     line-height: 6.32px;
 }
 
-header nav ul li a:before {
+header nav ul li:before {
     position: absolute;
     left: -18px;
     top: 50%;
     content: ".";
-    margin-top: -8px;
+    margin-top: -15px;
     color: #494e62;
     font-size: 18px;
 }
 
-header nav ul li:first-child a:before {
+header nav ul li:first-child:before {
     content: none;
 }
 
