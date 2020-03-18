@@ -55,9 +55,10 @@ html {
     scroll-behavior: smooth;
 }
 
-main{
-    padding-top:95px;
+main {
+    padding-top: 95px;
 }
+
 /* HEADER */
 
 header {
@@ -96,7 +97,6 @@ header nav ul li {
 header nav ul li:last-child {
     margin-right: 0;
 }
-    
 
 header nav ul li:before {
     position: absolute;
@@ -146,7 +146,7 @@ header .logo span {
     max-width: 940px;
 }
 
-.right-scroll{
+.right-scroll {
     position: absolute;
     top: -90px;
 }
@@ -215,7 +215,7 @@ header .logo span {
     border-bottom: 5px solid #ea676b;
 }
 
-.slider .slide-2{
+.slider .slide-2 {
     height: 594px;
     border-bottom: 5px solid #4975e5;
 }
