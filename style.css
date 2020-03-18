@@ -55,6 +55,9 @@ html {
     scroll-behavior: smooth;
 }
 
+main{
+    padding-top:95px;
+}
 /* HEADER */
 
 header {
@@ -79,13 +82,6 @@ header nav ul li {
     margin-right: 30px;
     margin-top: 5px;
     position: relative;
-}
-
-header nav ul li:last-child {
-    margin-right: 0;
-}
-
-header nav ul li a {
     color: #ffffff;
     font-weight: 700;
     text-decoration: none;
@@ -94,14 +90,20 @@ header nav ul li a {
     letter-spacing: -0.2px;
     vertical-align: middle;
     line-height: 6.32px;
+    cursor: pointer;
 }
+
+header nav ul li:last-child {
+    margin-right: 0;
+}
+    
 
 header nav ul li:before {
     position: absolute;
     left: -18px;
     top: 50%;
     content: ".";
-    margin-top: -15px;
+    margin-top: -10px;
     color: #494e62;
     font-size: 18px;
 }
@@ -110,11 +112,11 @@ header nav ul li:first-child:before {
     content: none;
 }
 
-header nav ul li a.active {
+header nav ul li.active {
     color: #f06c64;
 }
 
-header nav ul li a:hover {
+header nav ul li:hover {
     color: #f06c64;
 }
 

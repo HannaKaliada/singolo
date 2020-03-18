@@ -8,6 +8,25 @@
                         link.classList.remove('active');
                     })
                     event.target.classList.add('active');
+                    this.scrollToSection(event.target);
+                }
+            });
+        },
+        scrollToSection(target) {
+            let anchor = target.dataset.anchor;
+            document.querySelector(`#${anchor}`).scrollIntoView({ alignToTop: "start", behavior: "smooth" });
+        },
+        changeActiveLinkDuringScroll() {
+            const sections = document.querySelectorAll("section");
+            const navLinks = document.querySelectorAll("#navItem");
+            const sectionMargin = 95;
+            let currentActive = 0;
+            window.addEventListener('scroll', () => {
+                const current = sections.length - [...sections].reverse().findIndex((section) => window.scrollY >= section.offsetTop - sectionMargin) - 1;
+                if (current !== currentActive) {
+                    navLinks.forEach((link)=>link.classList.remove('active'));
+                    currentActive = current;
+                    navLinks[current].classList.add("active");
                 }
             });
         },
@@ -34,17 +53,6 @@
                 }
             }
         },
-        // stickyHeader() {
-        //     let header = document.querySelector('header');
-        //     window.addEventListener('scroll', function () {
-        //         if (this.pageYOffset > header.offsetTop) {
-        //             header.classList.add('fixed');
-        //         }
-        //         else{
-        //             header.classList.remove('fixed');
-        //         }
-        //     });
-        // },
         slider() {
             let slides = document.querySelectorAll('#slide');
             let currentSlide = 0;
@@ -96,7 +104,7 @@
                 event.preventDefault();
                 let subject = document.querySelector('#contact-form').querySelector('#subject').value.toString();
                 let comment = document.querySelector('#contact-form').querySelector('#comment').value.toString();
-                if(subject && comment){
+                if (subject && comment) {
                     document.querySelector('#topic').innerHTML = subject;
                     document.querySelector('#description').innerHTML = comment;
                 }
@@ -106,7 +114,7 @@
                 else if (comment) {
                     document.querySelector('#description').innerHTML = comment;
                 }
-                    MODAL_BLOCK.classList.remove('hidden');
+                MODAL_BLOCK.classList.remove('hidden');
             })
             CLOSE_BTN.addEventListener('click', () => {
                 MODAL_BLOCK.classList.add('hidden');
@@ -147,7 +155,7 @@
         init() {
             this.activeLinks();
             this.modalBlock();
-            // this.stickyHeader();
+            this.changeActiveLinkDuringScroll();
             this.slider();
             this.portfolioItemClickHandler();
             this.filtersClickHandlers();

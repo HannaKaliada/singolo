@@ -6,23 +6,22 @@
     <title>Singolo1</title>
     <link href="style.css" rel="stylesheet">
 </head>
-
 <body>
     <div class="wrapper">
-        <header>
+        <header class="fixed">
             <div class="logo"><a href="#">Singolo<span>*</span></a></div>
             <nav>
                 <ul id="nav">
-                    <li><a id='navItem' class="link active" href="#">home</a></li>
-                    <li><a id='navItem' class="link" href="#services">services</a></li>
-                    <li><a id='navItem' class="link" href="#portfolio">portfolio</a></li>
-                    <li><a id='navItem' class="link" href="#about-us">about</a></li>
-                    <li><a id='navItem' class="link" href="#get-a-quote">contact</a></li>
+                    <li id="navItem" class="link active" data-anchor="slider-section">home</li>
+                    <li id="navItem" class="link" data-anchor="services-section">services</li>
+                    <li id="navItem" class="link" data-anchor="portfolio-section">portfolio</li>
+                    <li id="navItem" class="link" data-anchor="about-us-section">about</li>
+                    <li id="navItem" class="link" data-anchor="get-a-quote-section">contact</li>
                 </ul>
             </nav>
         </header>
         <main>
-            <section>
+            <section id="slider-section">
                 <div class="slider">
                     <div id="slides">
                         <div id="slide" class="slide slide-1 active">
@@ -43,8 +42,8 @@
                     </div>
                 </div>
             </section>
-            <section>
-                <div class="services" id="services">
+            <section id="services-section">
+                <div class="services">
                     <h1 class="section-title">Our Services</h1>
                     <div class="section-desc">Fusce dapibus, tellus ac cursus commodo, tortor
                         mauris condimentum. Duis mollis, non commodo luctus, nisi erat porttitor ligula,
@@ -117,7 +116,7 @@
                 </div>
                 <div class="services-bottom"></div>
             </section>
-            <section>
+            <section id="portfolio-section">
                 <div class="portfolio">
                     <h2 class="section-title">Portfolio</h2>
                     <div class="section-desc">Duis mollis, est non commodo luctus,
@@ -157,8 +156,8 @@
                 </div>
                 <div class="portfolio-bottom"></div>
             </section>
-            <section>
-                <div class="about-us" id="about-us">
+            <section id="about-us-section">
+                <div class="about-us">
                     <h2 class="section-title">About Us</h2>
                     <div class="section-desc">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis
                         mollis, non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.
@@ -282,8 +281,8 @@
                 </div>
                 <div class="about-us-bottom"></div>
             </section>
-            <section>
-                <div class="get-a-quote" id="get-a-quote">
+            <section id="get-a-quote-section">
+                <div class="get-a-quote">
                     <h2 class="section-title">Get a Quote</h2>
                     <div class="section-desc">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis
                         mollis, non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.
