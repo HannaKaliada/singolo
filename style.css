@@ -146,6 +146,11 @@ header .logo span {
     max-width: 940px;
 }
 
+.right-scroll{
+    position: absolute;
+    top: -90px;
+}
+
 /* HEADER_END */
 
 /* SLIDER */
@@ -319,6 +324,7 @@ header .logo span {
 .services {
     background-color: #f2f2f2;
     padding: 69px 40px 35px;
+    position: relative;
 }
 
 .section-title {
@@ -396,6 +402,7 @@ header .logo span {
 .portfolio {
     padding: 67px 40px 48px;
     background: #2d303a;
+    position: relative;
 }
 
 .portfolio .section-title {
@@ -482,6 +489,7 @@ header .logo span {
 .about-us {
     padding: 69px 40px 65px;
     background-color: #f2f2f2;
+    position: relative;
 }
 
 .about-us .workers-block {
@@ -573,6 +581,7 @@ svg path {
 /*GET_A_QUOTE*/
 
 .get-a-quote {
+    position: relative;
     padding: 67px 40px 30px;
     background-color: #f06c64;
     color: #f0d8d9;
