@@ -24,7 +24,7 @@
             window.addEventListener('scroll', () => {
                 const current = sections.length - [...sections].reverse().findIndex((section) => window.scrollY >= section.offsetTop - sectionMargin) - 1;
                 if (current !== currentActive) {
-                    navLinks.forEach((link) => link.classList.remove('active'));
+                    navLinks.forEach((link)=>link.classList.remove('active'));
                     currentActive = current;
                     navLinks[current].classList.add("active");
                 }

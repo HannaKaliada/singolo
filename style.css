@@ -103,7 +103,7 @@ header nav ul li:before {
     left: -18px;
     top: 50%;
     content: ".";
-    margin-top: -10px;
+    margin-top: -9px;
     color: #494e62;
     font-size: 18px;
 }
