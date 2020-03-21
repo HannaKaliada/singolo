@@ -105,22 +105,22 @@
                 let subject = document.querySelector('#contact-form').querySelector('#subject').value.toString();
                 let comment = document.querySelector('#contact-form').querySelector('#comment').value.toString();
                 if (subject && comment) {
-                    document.querySelector('#topic').innerHTML = subject;
-                    document.querySelector('#description').innerHTML = comment;
+                    document.querySelector('#topic').innerText = subject;
+                    document.querySelector('#description').innerText = comment;
                 }
                 else if (subject) {
-                    document.querySelector('#topic').innerHTML = subject;
+                    document.querySelector('#topic').innerText = subject;
                 }
                 else if (comment) {
-                    document.querySelector('#description').innerHTML = comment;
+                    document.querySelector('#description').innerText = comment;
                 }
                 MODAL_BLOCK.classList.remove('hidden');
             })
             CLOSE_BTN.addEventListener('click', () => {
                 MODAL_BLOCK.classList.add('hidden');
                 document.querySelector('#contact-form').reset();
-                document.querySelector('#description').innerHTML = 'No description';
-                document.querySelector('#topic').innerHTML = 'No subject';
+                document.querySelector('#description').innerText = 'No description';
+                document.querySelector('#topic').innerText = 'No subject';
             })
         },
         portfolioItemClickHandler() {

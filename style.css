@@ -467,6 +467,7 @@ header .logo span {
 
 .portfolio-works-list div img {
     width: 220px;
+    height: 100%;
 }
 
 .portfolio-works-list div.active {
