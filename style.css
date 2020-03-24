@@ -158,6 +158,7 @@ header .logo span {
 .burger-menu-btn {
     display: none;
 }
+
 header .mobile-menu {
     display: flex;
     justify-content: space-between;
@@ -254,6 +255,7 @@ header .mobile-menu-overlay {
         transition: 0.5s;
     }
     .mobile-menu.opened+.mobile-menu-overlay {
+        display: block;
         opacity: 0.5;
     }
 }
@@ -708,7 +710,7 @@ header .mobile-menu-overlay {
         margin-bottom: 25px;
     }
     .portfolio-works-list div, .portfolio-works-list div:nth-child(3n) {
-        width: 47.781%;
+        width: 47.13%;
         margin-right: 14px;
         margin-bottom: 14px;
     }
