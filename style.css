@@ -720,6 +720,9 @@ header .mobile-menu-overlay {
     .right-scroll {
         top: -85px;
     }
+    .portfolio-works-list div:nth-child(n+9) {
+        display: none;
+    }
 }
 
 @media (max-width: 320px) {
