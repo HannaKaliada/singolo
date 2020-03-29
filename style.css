@@ -152,7 +152,7 @@ header .logo span {
 
 .right-scroll {
     position: absolute;
-    top: -90px;
+    top: -85px;
 }
 
 .burger-menu-btn {
@@ -274,7 +274,7 @@ header .mobile-menu-overlay {
     position: absolute;
     top: 50%;
     transform: translate(-50%);
-    margin-top: -20px;
+    margin-top: -14px;
     z-index: 1;
     cursor: pointer;
     transition: 0.3s;
@@ -472,10 +472,19 @@ header .mobile-menu-overlay {
         border-radius: 1px;
     }
     .slider .arrow-prev {
-        left: 20px;
+        left: 28px;
     }
     .slider .arrow-next {
-        right: 5px;
+        right: 12px;
+    }
+}
+
+@media (max-width: 767px){
+    .slider .arrow-prev {
+        left: 23px;
+    }
+    .slider .arrow-next {
+        right: 7px;
     }
 }
 
@@ -666,8 +675,6 @@ header .mobile-menu-overlay {
 @media (max-width:1019px) and (min-width: 768px) {
     .portfolio-works-list div {
         width: 31.396%;
-        ;
-        margin-right: 20px;
     }
     .portfolio-works-list div:nth-child(4n) {
         margin-right: 20px;
@@ -759,7 +766,7 @@ header .mobile-menu-overlay {
 }
 
 .about-us .workers-block .worker {
-    margin-right: 20px;
+    margin-right: 2.60416vw;
     width: 33.33333%;
 }
 
